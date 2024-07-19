@@ -1,8 +1,21 @@
+###############################################################################################################
+"""
+Display_Coords_Batch.py
+
+Created by: Robson Rogério Dutra Pereira on 15.July.2024
+Last Modified: rrdpereira
+
+Description: Batch images GNSS diplay coordinaates, absolute and relative altitude over georreferenced JPGs,
+             based on Coord_Foto.exe from https://github.com/harleyham/Coord_Foto.
+
+E-mail: robsondutra.pereira@outlook.com
+"""
+###############################################################################################################
 import os
 import subprocess
 
 exe_path = "Coord_Foto.exe"
-images_dir = "./images/L1"  # Images Path
+images_dir = "./images/L1"  # Images Path: "L1", "H20T", "General", and others
 
 files = os.listdir(images_dir)
 print("files: {0}".format(files))
